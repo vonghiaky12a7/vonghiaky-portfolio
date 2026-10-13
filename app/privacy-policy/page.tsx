@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
               <ul className="list-disc list-inside space-y-1 text-slate-700 dark:text-slate-300">
                 <li><strong>Cách 1 (Trong ứng dụng):</strong> Vào mục <em>Cài đặt (Settings) &rarr; Tài khoản (Account) &rarr; Xóa tài khoản &amp; dữ liệu</em>.</li>
                 <li><strong>Cách 2 (Trang web):</strong> Truy cập trực tiếp trang <Link href="/data-deletion" className="text-indigo-600 dark:text-indigo-400 font-semibold underline hover:text-indigo-500">Yêu Cầu Xóa Dữ Liệu Người Dùng</Link> để gửi form trực tuyến.</li>
-                <li><strong>Cách 3 (Email):</strong> Gửi email đến <a href="mailto:vonghiaky2003@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline font-medium">vonghiaky2003@gmail.com</a> với tiêu đề <em>[Yêu cầu xóa dữ liệu - Tên Ứng Dụng]</em>. Yêu cầu sẽ được xử lý trong vòng 30 ngày.</li>
+                <li><strong>Cách 3 (Email):</strong> Gửi email đến <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline font-medium">vonghiaky.dev@gmail.com</a> với tiêu đề <em>[Yêu cầu xóa dữ liệu - Tên Ứng Dụng]</em>. Yêu cầu sẽ được xử lý trong vòng 30 ngày.</li>
               </ul>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function PrivacyPolicyPage() {
             <p>Nếu bạn có bất kỳ thắc mắc, phản hồi hoặc yêu cầu pháp lý nào liên quan đến Chính sách quyền riêng tư này, vui lòng liên hệ với nhà phát triển:</p>
             <div className="p-4 rounded-2xl bg-slate-100/70 dark:bg-slate-800/70 space-y-1 text-slate-800 dark:text-slate-200">
               <p><strong>Nhà phát triển:</strong> Võ Nghĩa Kỳ (Vo Nghia Ky)</p>
-              <p><strong>Email hỗ trợ:</strong> <a href="mailto:vonghiaky2003@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline">vonghiaky2003@gmail.com</a></p>
+              <p><strong>Email hỗ trợ:</strong> <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline">vonghiaky.dev@gmail.com</a></p>
               <p><strong>Điện thoại:</strong> (+84) 91 347 6315</p>
               <p><strong>Địa chỉ:</strong> Thành phố Hồ Chí Minh, Việt Nam</p>
               <p><strong>Website:</strong> <a href="https://vonghiaky.dev" target="_blank" rel="noreferrer" className="text-indigo-600 dark:text-indigo-400 underline">https://vonghiaky.dev</a></p>

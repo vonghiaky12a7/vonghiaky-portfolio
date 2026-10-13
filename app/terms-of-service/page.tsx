@@ -89,7 +89,7 @@ export default function TermsOfServicePage() {
             <h2 className="text-lg font-bold text-slate-900 dark:text-white">6. Thông Tin Liên Hệ Hỗ Trợ</h2>
             <p>Mọi thắc mắc về điều khoản dịch vụ xin vui lòng gửi về:</p>
             <p className="font-medium text-slate-900 dark:text-white">
-              Võ Nghĩa Kỳ • Email: <a href="mailto:vonghiaky2003@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline">vonghiaky2003@gmail.com</a> • Điện thoại: (+84) 91 347 6315
+              Võ Nghĩa Kỳ • Email: <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline">vonghiaky.dev@gmail.com</a> • Điện thoại: (+84) 91 347 6315
             </p>
           </div>
         </div>

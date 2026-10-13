@@ -210,7 +210,7 @@ export default function HomePage() {
                         <Linkedin className="w-4 h-4" />
                       </a>
                       <a
-                        href="mailto:vonghiaky2003@gmail.com"
+                        href="mailto:vonghiaky.dev@gmail.com"
                         className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-red-500 transition-colors"
                         title="Email"
                       >

@@ -102,7 +102,7 @@ export default function DataDeletionPage() {
             <h2>Cách 2: Gửi Yêu Cầu Xóa Dữ Liệu Trực Tuyến Đến Nhà Phát Triển</h2>
           </div>
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            Nếu bạn đã tạo tài khoản hoặc muốn xóa hoàn toàn thông tin định danh lưu trên máy chủ đồng bộ, vui lòng điền form dưới đây hoặc gửi email trực tiếp đến <a href="mailto:vonghiaky2003@gmail.com" className="text-indigo-600 dark:text-indigo-400 font-semibold underline">vonghiaky2003@gmail.com</a>.
+            Nếu bạn đã tạo tài khoản hoặc muốn xóa hoàn toàn thông tin định danh lưu trên máy chủ đồng bộ, vui lòng điền form dưới đây hoặc gửi email trực tiếp đến <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 font-semibold underline">vonghiaky.dev@gmail.com</a>.
           </p>
 
           {submitted ? (
@@ -179,7 +179,7 @@ export default function DataDeletionPage() {
         {/* Developer Contact Footer */}
         <div className="pt-6 border-t border-slate-200/60 dark:border-slate-800/80 text-xs text-slate-500 dark:text-slate-400 flex flex-col sm:flex-row justify-between gap-3">
           <p>
-            Nhà phát triển: <strong>Võ Nghĩa Kỳ</strong> • Email: <a href="mailto:vonghiaky2003@gmail.com" className="underline hover:text-indigo-400">vonghiaky2003@gmail.com</a>
+            Nhà phát triển: <strong>Võ Nghĩa Kỳ</strong> • Email: <a href="mailto:vonghiaky.dev@gmail.com" className="underline hover:text-indigo-400">vonghiaky.dev@gmail.com</a>
           </p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="underline hover:text-indigo-400">

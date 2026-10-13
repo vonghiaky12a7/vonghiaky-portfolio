@@ -44,7 +44,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:vonghiaky2003@gmail.com"
+                href="mailto:vonghiaky.dev@gmail.com"
                 className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-red-500 hover:bg-slate-200/60 dark:hover:bg-slate-700/60 transition-colors"
                 aria-label="Email"
               >
@@ -110,8 +110,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
-                <a href="mailto:vonghiaky2003@gmail.com" className="hover:underline">
-                  vonghiaky2003@gmail.com
+                <a href="mailto:vonghiaky.dev@gmail.com" className="hover:underline">
+                  vonghiaky.dev@gmail.com
                 </a>
               </li>
             </ul>
