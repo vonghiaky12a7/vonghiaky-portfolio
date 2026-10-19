@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Trash2, CheckCircle2, ShieldAlert, Mail, Smartphone, Info } from "lucide-react";
+import { ArrowLeft, Trash2, CheckCircle2, ShieldAlert, Mail, Smartphone, Info, Globe, ExternalLink } from "lucide-react";
 
 export default function DataDeletionPage() {
-  const [appName, setAppName] = useState("Streak Học Bài");
+  const [appName, setAppName] = useState("Postiz Social Manager");
   const [email, setEmail] = useState("");
   const [reason, setReason] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -35,160 +35,157 @@ export default function DataDeletionPage() {
             </div>
             <div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
-                Yêu Cầu Xóa Dữ Liệu &amp; Tài Khoản
+                Hướng Dẫn &amp; Yêu Cầu Xóa Dữ Liệu
               </h1>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                Google Play Data Deletion Request • Nhà phát triển: <strong>Võ Nghĩa Kỳ</strong>
+                Data Deletion Instructions • Nhà phát triển: <strong>Võ Nghĩa Kỳ</strong>
               </p>
             </div>
           </div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-semibold self-start sm:self-auto">
             <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>Google Play Policy Compliant</span>
+            <span>Meta / Google / TikTok Compliant</span>
           </div>
         </div>
 
-        {/* Overview */}
+        {/* Intro */}
         <div className="space-y-4 text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
           <p>
-            Tuân thủ chính sách <strong>Google Play Data Safety</strong>, người dùng có toàn quyền chủ động xóa dữ liệu hoặc yêu cầu nhà phát triển xóa vĩnh viễn tài khoản và các dữ liệu liên quan được lưu trữ trên ứng dụng di động do Võ Nghĩa Kỳ phát triển.
+            Trang này cung cấp thông tin hướng dẫn chi tiết cách người dùng có thể xóa tài khoản, thu hồi quyền truy cập và yêu cầu xóa vĩnh viễn toàn bộ dữ liệu cá nhân liên quan đến các dịch vụ web (Postiz Social Manager) và ứng dụng di động của <strong>Võ Nghĩa Kỳ</strong>, tuân thủ chính sách bảo vệ dữ liệu của <strong>Meta (Facebook/Instagram)</strong>, <strong>Google/YouTube</strong>, <strong>TikTok</strong>, và <strong>Google Play</strong>.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-            <div className="p-4 rounded-2xl bg-slate-100/70 dark:bg-slate-800/60 border border-slate-200/50 dark:border-slate-700/50 space-y-2">
-              <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
-                <Trash2 className="w-4 h-4 text-red-500" />
-                <h3>Dữ Liệu Sẽ Bị Xóa Vĩnh Viễn</h3>
-              </div>
-              <ul className="list-disc list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300">
-                <li>Thông tin tài khoản cá nhân (tên, email, avatar).</li>
-                <li>Lịch sử chuỗi học tập (streak) và huy hiệu thành tích.</li>
-                <li>Dữ liệu thời gian tập trung Pomodoro và lịch học cá nhân.</li>
-                <li>Mã thông báo đẩy thiết bị (Push Notification Token).</li>
-              </ul>
+        </div>
+
+        {/* Step-by-step Guides per Platform */}
+        <div className="space-y-6">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <Globe className="w-5 h-5 text-indigo-500" />
+            <span>1. Hướng Dẫn Tự Thu Hồi &amp; Xóa Quyền Trên Từng Nền Tảng</span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Facebook/Meta Card */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-3">
+              <h3 className="font-bold text-blue-600 dark:text-blue-400 text-base">Facebook &amp; Instagram</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Để xóa quyền ứng dụng và dữ liệu liên kết trên Facebook:
+              </p>
+              <ol className="list-decimal list-inside text-xs text-slate-700 dark:text-slate-300 space-y-1.5 pl-1">
+                <li>Vào <strong>Cài đặt &amp; quyền riêng tư</strong> trên Facebook.</li>
+                <li>Chọn <strong>Cài đặt</strong> &rarr; <strong>Ứng dụng và trang web</strong>.</li>
+                <li>Tìm ứng dụng của chúng tôi và bấm <strong>Gỡ / Xóa</strong>.</li>
+                <li>Tích chọn <em>&quot;Xóa bài viết, video hoặc sự kiện...&quot;</em> nếu muốn dọn sạch.</li>
+              </ol>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-100/70 dark:bg-slate-800/60 border border-slate-200/50 dark:border-slate-700/50 space-y-2">
-              <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
-                <ShieldAlert className="w-4 h-4 text-amber-500" />
-                <h3>Dữ Liệu Giữ Lại (Nếu Có)</h3>
-              </div>
-              <ul className="list-disc list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300">
-                <li>Hóa đơn giao dịch mua hàng (nếu có, theo quy định thuế/kế toán pháp luật).</li>
-                <li>Nhật ký kỹ thuật ẩn danh đã được khử toàn bộ danh tính người dùng.</li>
-                <li>Thời gian xử lý hoàn tất xóa: Trong vòng <strong>30 ngày</strong> kể từ khi nhận yêu cầu.</li>
-              </ul>
+
+            {/* YouTube/Google Card */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-3">
+              <h3 className="font-bold text-red-600 dark:text-red-400 text-base">Google &amp; YouTube</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Để xóa quyền truy cập YouTube API:
+              </p>
+              <ol className="list-decimal list-inside text-xs text-slate-700 dark:text-slate-300 space-y-1.5 pl-1">
+                <li>Truy cập <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noreferrer" className="text-red-600 dark:text-red-400 underline font-medium inline-flex items-center gap-0.5">Google Permissions <ExternalLink className="w-3 h-3 inline" /></a>.</li>
+                <li>Chọn ứng dụng quản lý Postiz / Võ Nghĩa Kỳ.</li>
+                <li>Bấm <strong>Xóa quyền truy cập (Remove access)</strong>.</li>
+                <li>Toàn bộ token truy cập sẽ bị vô hiệu hóa ngay lập tức.</li>
+              </ol>
+            </div>
+
+            {/* TikTok Card */}
+            <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-3">
+              <h3 className="font-bold text-black dark:text-white text-base">TikTok</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Để thu hồi quyền liên kết tài khoản TikTok:
+              </p>
+              <ol className="list-decimal list-inside text-xs text-slate-700 dark:text-slate-300 space-y-1.5 pl-1">
+                <li>Mở ứng dụng TikTok trên điện thoại.</li>
+                <li>Vào <strong>Hồ sơ</strong> &rarr; <strong>Cài đặt &amp; quyền riêng tư</strong>.</li>
+                <li>Chọn <strong>Bảo mật &amp; quyền</strong> &rarr; <strong>Quản lý quyền ứng dụng</strong>.</li>
+                <li>Chọn ứng dụng và bấm <strong>Thu hồi quyền (Remove access)</strong>.</li>
+              </ol>
             </div>
           </div>
         </div>
 
-        {/* Section: Direct Device Reset */}
-        <div className="p-5 rounded-2xl bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-200/50 dark:border-indigo-800/50 space-y-3">
-          <div className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
-            <Smartphone className="w-5 h-5 text-indigo-500" />
-            <h2>Cách 1: Tự Xóa Dữ Liệu Ngay Trên Thiết Bị</h2>
-          </div>
-          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Hầu hết các ứng dụng của chúng tôi (như <em>Streak Học Bài</em>) hoạt động theo cơ chế <strong>Offline-First</strong>, lưu trữ dữ liệu an toàn ngay trên điện thoại của bạn. Bạn có thể tự xóa toàn bộ dữ liệu ngay lập tức bằng một trong hai cách:
-          </p>
-          <ol className="list-decimal list-inside space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium pl-2">
-            <li><strong>Trong ứng dụng:</strong> Vào mục <em>Hồ sơ (Profile) &rarr; Cài đặt &rarr; Xóa dữ liệu / Đặt lại về ban đầu</em>.</li>
-            <li><strong>Cài đặt Android:</strong> Mở <em>Cài đặt điện thoại &rarr; Ứng dụng &rarr; Streak Học Bài &rarr; Lưu trữ &rarr; Xóa dữ liệu (Clear Data) &rarr; Gỡ cài đặt (Uninstall)</em>.</li>
-          </ol>
-        </div>
-
-        {/* Section: Online Request Form */}
-        <div className="space-y-4 pt-2">
+        {/* Direct Deletion Form */}
+        <div className="space-y-4 pt-4 border-t border-slate-200/60 dark:border-slate-800/80">
           <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
             <Mail className="w-5 h-5 text-indigo-500" />
-            <h2>Cách 2: Gửi Yêu Cầu Xóa Dữ Liệu Trực Tuyến Đến Nhà Phát Triển</h2>
+            <h2>2. Gửi Yêu Cầu Xóa Dữ Liệu Trực Tiếp Đến Máy Chủ</h2>
           </div>
-          <p className="text-sm text-slate-600 dark:text-slate-300">
-            Nếu bạn đã tạo tài khoản hoặc muốn xóa hoàn toàn thông tin định danh lưu trên máy chủ đồng bộ, vui lòng điền form dưới đây hoặc gửi email trực tiếp đến <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 font-semibold underline">vonghiaky.dev@gmail.com</a>.
+          <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Nếu bạn muốn xóa toàn bộ thông tin đăng ký, token lưu trên máy chủ hoặc lịch sử đăng bài, vui lòng gửi yêu cầu qua form dưới đây hoặc gửi email đến <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 font-semibold underline">vonghiaky.dev@gmail.com</a>. Chúng tôi sẽ xử lý và xóa vĩnh viễn trong vòng 24 - 48 giờ làm việc.
           </p>
 
           {submitted ? (
-            <div className="p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-300 space-y-2">
-              <div className="flex items-center gap-2 font-bold text-base">
-                <CheckCircle2 className="w-5 h-5" />
-                <span>Yêu Cầu Xóa Dữ Liệu Đã Được Tiếp Nhận Thành Công!</span>
+            <div className="p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 flex items-start gap-3">
+              <CheckCircle2 className="w-6 h-6 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+              <div className="space-y-1 text-sm text-emerald-900 dark:text-emerald-200">
+                <p className="font-bold">Yêu cầu đã được tiếp nhận thành công!</p>
+                <p>
+                  Mã xác nhận yêu cầu của bạn đã được ghi nhận cho email <strong>{email}</strong>. Hệ thống sẽ tiến hành xóa sạch dữ liệu liên quan và gửi thông báo xác nhận qua email cho bạn.
+                </p>
               </div>
-              <p className="text-sm">
-                Chúng tôi đã ghi nhận yêu cầu xóa tài khoản cho email <strong>{email}</strong> trên ứng dụng <strong>{appName}</strong>. Toàn bộ thông tin định danh sẽ được kiểm tra và xử lý xóa vĩnh viễn trong vòng tối đa 30 ngày. Một email xác nhận sẽ được gửi đến hòm thư của bạn.
-              </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4 p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                    Ứng dụng cần xóa dữ liệu *
-                  </label>
-                  <select
-                    value={appName}
-                    onChange={(e) => setAppName(e.target.value)}
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  >
-                    <option value="Streak Học Bài">Streak Học Bài (com.streakhocbai.app)</option>
-                    <option value="FitTrack">FitTrack - Health &amp; Workout</option>
-                    <option value="Serene Yoga">Serene Yoga &amp; Mindfulness</option>
-                    <option value="Khác">Ứng dụng khác của Võ Nghĩa Kỳ</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                    Địa chỉ Email tài khoản cần xóa *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="example@gmail.com"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  />
-                </div>
+            <form onSubmit={handleSubmit} className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-4">
+              <div>
+                <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                  Dịch vụ / Ứng dụng liên quan *
+                </label>
+                <select
+                  value={appName}
+                  onChange={(e) => setAppName(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                >
+                  <option value="Postiz Social Manager (TikTok / YouTube / Meta)">Postiz Social Manager (TikTok / YouTube / Facebook)</option>
+                  <option value="Streak Học Bài (Android / iOS)">Streak Học Bài (Android / iOS)</option>
+                  <option value="FitTrack">FitTrack</option>
+                  <option value="Serene Yoga">Serene Yoga</option>
+                  <option value="Khác">Sản phẩm / Dịch vụ khác</option>
+                </select>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Lý do yêu cầu xóa (Tùy chọn)
+                <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                  Email đăng ký hoặc ID tài khoản *
                 </label>
-                <textarea
-                  rows={3}
-                  value={reason}
-                  onChange={(e) => setReason(e.target.value)}
-                  placeholder="Tôi muốn xóa vĩnh viễn tài khoản và lịch sử thói quen..."
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                <input
+                  type="email"
+                  required
+                  placeholder="name@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 />
               </div>
 
-              <div className="flex items-center justify-between pt-2">
-                <span className="text-xs text-slate-500 dark:text-slate-400">
-                  Thời gian xử lý: Tối đa 30 ngày theo quy định Google Play.
-                </span>
-                <button
-                  type="submit"
-                  className="px-6 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-sm font-semibold transition-all shadow-md hover:shadow-red-500/20"
-                >
-                  Gửi Yêu Cầu Xóa Dữ Liệu
-                </button>
+              <div>
+                <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                  Lý do yêu cầu (tùy chọn)
+                </label>
+                <textarea
+                  rows={3}
+                  placeholder="Ví dụ: Tôi không còn nhu cầu sử dụng dịch vụ và muốn xóa toàn bộ token / dữ liệu..."
+                  value={reason}
+                  onChange={(e) => setReason(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                />
               </div>
+
+              <button
+                type="submit"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold text-sm transition-colors shadow-lg shadow-red-600/20"
+              >
+                Gửi Yêu Cầu Xóa Dữ Liệu
+              </button>
             </form>
           )}
         </div>
 
-        {/* Developer Contact Footer */}
-        <div className="pt-6 border-t border-slate-200/60 dark:border-slate-800/80 text-xs text-slate-500 dark:text-slate-400 flex flex-col sm:flex-row justify-between gap-3">
-          <p>
-            Nhà phát triển: <strong>Võ Nghĩa Kỳ</strong> • Email: <a href="mailto:vonghiaky.dev@gmail.com" className="underline hover:text-indigo-400">vonghiaky.dev@gmail.com</a>
-          </p>
-          <div className="flex gap-4">
-            <Link href="/privacy-policy" className="underline hover:text-indigo-400">
-              Chính Sách Bảo Mật
-            </Link>
-            <Link href="/terms-of-service" className="underline hover:text-indigo-400">
-              Điều Khoản Dịch Vụ
-            </Link>
-          </div>
+        {/* Footer Contact */}
+        <div className="pt-4 border-t border-slate-200/60 dark:border-slate-800/80 text-xs text-slate-500 dark:text-slate-400">
+          Nhà phát triển: <strong>Võ Nghĩa Kỳ</strong> • Email hỗ trợ: <a href="mailto:vonghiaky.dev@gmail.com" className="underline hover:text-indigo-400">vonghiaky.dev@gmail.com</a> • Website: <a href="https://vonghiaky.dev" target="_blank" rel="noreferrer" className="underline hover:text-indigo-400">https://vonghiaky.dev</a>
         </div>
       </div>
     </div>

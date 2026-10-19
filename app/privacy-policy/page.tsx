@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, Shield, Mail, Smartphone, Lock, Eye, Trash2, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Shield, Mail, Smartphone, Lock, Eye, Trash2, CheckCircle2, Globe, ExternalLink } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy | Võ Nghĩa Kỳ - Google Play Apps",
-  description: "Privacy Policy for mobile applications and software engineering services developed by Võ Nghĩa Kỳ, including Streak Học Bài, FitTrack, and Serene Yoga.",
+  title: "Privacy Policy | Võ Nghĩa Kỳ - Apps & Services",
+  description: "Official Privacy Policy for web services, social media publishing platforms, and mobile applications developed by Võ Nghĩa Kỳ, compliant with Google, YouTube, Meta (Facebook/Instagram), and TikTok developer policies.",
 };
 
 export default function PrivacyPolicyPage() {
-  const lastUpdated = "March 15, 2025";
+  const lastUpdated = "October 19, 2026";
 
   return (
     <div className="container mx-auto px-6 py-12 max-w-4xl space-y-10">
@@ -38,23 +38,22 @@ export default function PrivacyPolicyPage() {
           </div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-semibold self-start sm:self-auto">
             <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>Google Play Compliant</span>
+            <span>Multi-Platform Compliant</span>
           </div>
         </div>
 
         {/* Intro */}
         <div className="space-y-4 text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
           <p>
-            Chính sách quyền riêng tư này áp dụng cho trang web portfolio, các dịch vụ phần mềm và toàn bộ các ứng dụng di động được phát triển và xuất bản bởi <strong>Võ Nghĩa Kỳ</strong> trên cửa hàng <strong>Google Play Store</strong> và <strong>Apple App Store</strong>, bao gồm nhưng không giới hạn ở:
+            Chính sách quyền riêng tư này áp dụng cho toàn bộ các sản phẩm phần mềm, dịch vụ web, công cụ quản lý truyền thông xã hội (Postiz), và các ứng dụng di động được phát triển và vận hành bởi <strong>Võ Nghĩa Kỳ</strong> (sau đây gọi là &quot;chúng tôi&quot;), bao gồm:
           </p>
           <ul className="list-disc list-inside pl-2 space-y-1 font-medium text-slate-800 dark:text-slate-200">
-            <li><strong>Streak Học Bài</strong> (Package: <code className="text-xs bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-indigo-600 dark:text-indigo-400">com.streakhocbai.app</code>)</li>
-            <li><strong>FitTrack</strong> (Workout &amp; Health Companion)</li>
-            <li><strong>Serene Yoga</strong> (Mindfulness &amp; Audio Meditation)</li>
-            <li><strong>SportsMedic Companion</strong></li>
+            <li><strong>Dịch vụ Web &amp; Tích hợp mạng xã hội:</strong> Postiz Social Manager (tích hợp YouTube, TikTok, Facebook, Instagram).</li>
+            <li><strong>Ứng dụng di động trên Google Play &amp; App Store:</strong> <em>Streak Học Bài</em> (<code className="text-xs bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-indigo-600 dark:text-indigo-400">com.streakhocbai.app</code>), <em>FitTrack</em>, <em>Serene Yoga</em>, <em>SportsMedic Companion</em>.</li>
+            <li><strong>Website chính thức:</strong> <a href="https://vonghiaky.dev" target="_blank" rel="noreferrer" className="text-indigo-600 dark:text-indigo-400 underline">https://vonghiaky.dev</a>.</li>
           </ul>
           <p>
-            Chúng tôi cam kết tôn trọng và bảo vệ quyền riêng tư của bạn. Chúng tôi tuân thủ nghiêm ngặt các chính sách dành cho nhà phát triển của Google Play (Google Play Developer Program Policies) cũng như các quy định pháp luật về bảo vệ dữ liệu cá nhân.
+            Chúng tôi cam kết bảo vệ dữ liệu cá nhân của người dùng và tuân thủ tuyệt đối các tiêu chuẩn bảo mật của các nền tảng đối tác bao gồm: <strong>Google API Services User Data Policy</strong>, <strong>YouTube Developer Policies</strong>, <strong>Meta Platform Terms</strong>, <strong>TikTok Developer Terms of Service</strong>, và các quy định pháp luật về bảo vệ dữ liệu cá nhân.
           </p>
         </div>
 
@@ -62,44 +61,83 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
             <Eye className="w-5 h-5 text-indigo-500" />
-            <h2>1. Dữ Liệu Chúng Tôi Thu Thập (Information We Collect)</h2>
+            <h2>1. Thông Tin Chúng Tôi Thu Thập (Information We Collect)</h2>
           </div>
           <div className="text-sm text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed pl-1">
-            <p>
-              Tùy thuộc vào ứng dụng bạn sử dụng, các loại dữ liệu sau có thể được xử lý:
-            </p>
+            <p>Chúng tôi chỉ thu thập dữ liệu tối thiểu cần thiết để cung cấp tính năng cho người dùng:</p>
             <ul className="list-disc list-inside space-y-2 pl-2">
               <li>
-                <strong>Dữ liệu lưu trữ nội bộ trên thiết bị (Offline-First Local Data):</strong> Lịch sử chuỗi học tập (streak), thời gian đếm giờ Pomodoro, lịch nhắc nhở học bài, danh sách thói quen được lưu trữ trực tiếp trong bộ nhớ cục bộ của thiết bị (thông qua AsyncStorage / SQLite). Dữ liệu này không bị gửi về máy chủ từ xa khi không có sự đồng ý của bạn.
+                <strong>Dữ liệu xác thực tài khoản bên thứ ba (OAuth Tokens):</strong> Khi bạn ủy quyền liên kết tài khoản (YouTube, TikTok, Facebook, Instagram), chúng tôi nhận các mã xác thực (Access Token / Refresh Token) và thông tin hồ sơ cơ bản (User ID, Tên kênh, Ảnh đại diện) do nền tảng đó cung cấp. Chúng tôi <strong>không bao giờ lưu trữ mật khẩu</strong> mạng xã hội của bạn.
               </li>
               <li>
-                <strong>Thông tin tài khoản (nếu người dùng đăng nhập):</strong> Tên hiển thị, địa chỉ email, ảnh đại diện nhằm mục đích đồng bộ chuỗi streak và hiển thị bảng xếp hạng thi đua bạn bè.
+                <strong>Nội dung đăng tải do người dùng cung cấp:</strong> Các file video, hình ảnh, văn bản tiêu đề, mô tả và hashtag mà bạn tải lên để lên lịch xuất bản lên các mạng xã hội.
               </li>
               <li>
-                <strong>Mã thông báo thông báo đẩy (Push Notification Token):</strong> Được tạo tự động bởi Expo Notifications / Firebase Cloud Messaging khi bạn bật tính năng nhắc nhở học bài, chỉ dùng để gửi thông báo nhắc lịch học tập theo cài đặt của bạn.
+                <strong>Dữ liệu ứng dụng di động lưu nội bộ (Offline-first Local Data):</strong> Lịch sử chuỗi học tập (streak), thời gian đếm giờ Pomodoro, lịch nhắc nhở thói quen được lưu trữ trực tiếp trên thiết bị của bạn.
               </li>
               <li>
-                <strong>Dữ liệu chẩn đoán kỹ thuật không định danh (Anonymous Diagnostics):</strong> Phiên bản hệ điều hành Android/iOS, dòng thiết bị và nhật ký lỗi crash ẩn danh nhằm mục đích phát hiện lỗi và tối ưu hiệu năng ứng dụng.
+                <strong>Dữ liệu phân tích kỹ thuật ẩn danh (Anonymous Analytics):</strong> Nhật ký lỗi kỹ thuật, phiên bản thiết bị và hệ điều hành nhằm phát hiện sự cố và cải thiện hiệu năng phần mềm.
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Section 2 */}
-        <div className="space-y-3">
+        {/* Section 2: Special compliance for YouTube, TikTok, Facebook */}
+        <div className="space-y-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
           <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
-            <Smartphone className="w-5 h-5 text-purple-500" />
-            <h2>2. Quyền Truy Cập Trên Thiết Bị (Device Permissions)</h2>
+            <Globe className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+            <h2>2. Điều Khoản Tuân Thủ Các Nền Tảng Đối Tác (Platform Specific Policies)</h2>
           </div>
-          <div className="text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed pl-1">
-            <p>Ứng dụng chỉ yêu cầu những quyền tối thiểu cần thiết để vận hành tính năng:</p>
-            <ul className="list-disc list-inside space-y-1.5 pl-2">
-              <li><strong>Thông báo (<code className="text-xs bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">POST_NOTIFICATIONS</code>):</strong> Để báo chuông khi hết phiên Pomodoro hoặc nhắc nhở duy trì chuỗi Streak học bài hàng ngày.</li>
-              <li><strong>Chạy nền âm thanh (<code className="text-xs bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">WAKE_LOCK / FOREGROUND_SERVICE</code>):</strong> Cho phép phát âm thanh sóng não white noise khi màn hình tắt trong lúc người dùng học bài.</li>
-            </ul>
-            <p className="text-xs text-slate-500 dark:text-slate-400 italic">
-              * Người dùng có thể bật/tắt các quyền này bất cứ lúc nào trong mục Cài đặt hệ thống của thiết bị.
+
+          {/* YouTube */}
+          <div className="space-y-2 text-sm text-slate-700 dark:text-slate-300 pl-2 border-l-2 border-red-500">
+            <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+              <span>A. YouTube API Services</span>
+            </h3>
+            <p>
+              Ứng dụng của chúng tôi sử dụng <strong>YouTube API Services</strong> để cho phép người dùng ủy quyền tải lên video, quản lý nội dung và xem số liệu phân tích của kênh.
             </p>
+            <ul className="list-disc list-inside space-y-1 pl-2">
+              <li>Khi sử dụng tính năng liên kết YouTube, bạn đồng ý tuân thủ <a href="https://www.youtube.com/t/terms" target="_blank" rel="noreferrer" className="text-red-600 dark:text-red-400 underline font-medium inline-flex items-center gap-0.5">Điều khoản dịch vụ của YouTube (YouTube Terms of Service) <ExternalLink className="w-3 h-3 inline" /></a>.</li>
+              <li>Việc xử lý dữ liệu của Google được quy định chi tiết tại <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className="text-red-600 dark:text-red-400 underline font-medium inline-flex items-center gap-0.5">Chính sách quyền riêng tư của Google (Google Privacy Policy) <ExternalLink className="w-3 h-3 inline" /></a>.</li>
+              <li>
+                <strong>Thu hồi quyền truy cập:</strong> Bạn có toàn quyền thu hồi quyền truy cập của ứng dụng vào dữ liệu YouTube của mình bất cứ lúc nào thông qua <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noreferrer" className="text-indigo-600 dark:text-indigo-400 underline font-medium inline-flex items-center gap-0.5">Trang cài đặt bảo mật của Google (Google Security Settings) <ExternalLink className="w-3 h-3 inline" /></a>.
+              </li>
+            </ul>
+          </div>
+
+          {/* TikTok */}
+          <div className="space-y-2 text-sm text-slate-700 dark:text-slate-300 pl-2 border-l-2 border-black dark:border-white">
+            <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+              <span>B. TikTok Developer Platform (Login Kit &amp; Content Posting API)</span>
+            </h3>
+            <p>
+              Khi bạn kết nối tài khoản TikTok, chúng tôi sử dụng TikTok Content Posting API và Login Kit để hỗ trợ đăng tải trực tiếp các video đã được bạn phê duyệt:
+            </p>
+            <ul className="list-disc list-inside space-y-1 pl-2">
+              <li>Chúng tôi chỉ truy cập các phạm vi (scopes) bạn đã phê duyệt: <code className="text-xs bg-slate-200 dark:bg-slate-800 px-1 py-0.5 rounded">user.info.basic</code>, <code className="text-xs bg-slate-200 dark:bg-slate-800 px-1 py-0.5 rounded">video.upload</code>, <code className="text-xs bg-slate-200 dark:bg-slate-800 px-1 py-0.5 rounded">video.publish</code>.</li>
+              <li>Bạn có thể xem thêm <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en" target="_blank" rel="noreferrer" className="text-indigo-600 dark:text-indigo-400 underline font-medium inline-flex items-center gap-0.5">Chính sách quyền riêng tư của TikTok <ExternalLink className="w-3 h-3 inline" /></a>.</li>
+              <li>
+                <strong>Hủy liên kết tài khoản:</strong> Bạn có thể thu hồi quyền của ứng dụng bất cứ lúc nào trong ứng dụng TikTok: <em>Hồ sơ &rarr; Cài đặt &amp; quyền riêng tư &rarr; Bảo mật &rarr; Quản lý quyền ứng dụng (Manage app permissions)</em>.
+              </li>
+            </ul>
+          </div>
+
+          {/* Facebook & Instagram */}
+          <div className="space-y-2 text-sm text-slate-700 dark:text-slate-300 pl-2 border-l-2 border-blue-600">
+            <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+              <span>C. Meta Platform (Facebook &amp; Instagram Graph API)</span>
+            </h3>
+            <p>
+              Chúng tôi tuân thủ các Điều khoản nền tảng Meta (Meta Platform Terms) và Chính sách sử dụng dữ liệu nhà phát triển:
+            </p>
+            <ul className="list-disc list-inside space-y-1 pl-2">
+              <li>Mã truy cập Trang Facebook (Page Access Token) và Instagram Business Token chỉ được sử dụng cho tác vụ lên lịch và xuất bản bài viết theo yêu cầu trực tiếp của bạn.</li>
+              <li>Chúng tôi không chia sẻ, chuyển giao hoặc bán bất kỳ dữ liệu người dùng Meta nào cho các mạng quảng cáo hoặc môi giới dữ liệu.</li>
+              <li>
+                <strong>Thu hồi quyền:</strong> Bạn có thể xóa ứng dụng khỏi tài khoản Facebook bất cứ lúc nào tại <em>Cài đặt &amp; Quyền riêng tư &rarr; Cài đặt &rarr; Ứng dụng và trang web</em>.
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -107,16 +145,16 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
             <Lock className="w-5 h-5 text-indigo-500" />
-            <h2>3. Chia Sẻ Dữ Liệu &amp; Dịch Vụ Bên Thứ Ba (Third-Party Services)</h2>
+            <h2>3. Cam Kết Bảo Vệ &amp; Không Thương Mại Hóa Dữ Liệu</h2>
           </div>
           <div className="text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed pl-1">
-            <p>
-              <strong>Chúng tôi TUYỆT ĐỐI KHÔNG bán, cho thuê hoặc thương mại hóa dữ liệu cá nhân của người dùng cho bất kỳ bên thứ ba nào.</strong>
+            <p className="font-semibold text-slate-900 dark:text-white">
+              Chúng tôi cam kết tuyệt đối:
             </p>
-            <p>Ứng dụng có thể sử dụng các dịch vụ nền tảng chuẩn mực sau:</p>
-            <ul className="list-disc list-inside space-y-1 pl-2">
-              <li><strong>Google Play Services:</strong> Phục vụ phân phối ứng dụng, cập nhật và các dịch vụ cốt lõi của Google Play.</li>
-              <li><strong>Expo Application Services (EAS):</strong> Quản lý bản build và dịch vụ đẩy thông báo.</li>
+            <ul className="list-disc list-inside space-y-1.5 pl-2">
+              <li><strong>KHÔNG bán, không cho thuê, không chia sẻ</strong> thông tin cá nhân hoặc dữ liệu mạng xã hội của bạn cho bất kỳ bên thứ ba vì mục đích tiếp thị hoặc quảng cáo.</li>
+              <li>Mọi token truy cập đều được mã hóa theo tiêu chuẩn công nghiệp (AES-256) trên cơ sở dữ liệu bảo mật.</li>
+              <li>Dữ liệu chỉ được dùng cho mục đích duy nhất: thực thi các hành động xuất bản nội dung mà bạn đã chủ động yêu cầu và phê duyệt.</li>
             </ul>
           </div>
         </div>
@@ -125,18 +163,21 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
             <Trash2 className="w-5 h-5 text-red-500" />
-            <h2>4. Quyền Xóa Tài Khoản &amp; Dữ Liệu (Account &amp; Data Deletion)</h2>
+            <h2>4. Hướng Dẫn &amp; Quyền Yêu Cầu Xóa Dữ Liệu (Data Deletion Instructions)</h2>
           </div>
           <div className="text-sm text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed pl-1">
             <p>
-              Tuân thủ chính sách <strong>Google Play Data Deletion Policy</strong>, người dùng có toàn quyền yêu cầu xóa bỏ vĩnh viễn tài khoản và toàn bộ dữ liệu cá nhân liên quan bất kỳ lúc nào:
+              Tuân thủ chính sách bảo vệ dữ liệu của Google, Meta, TikTok và các quy định quốc tế (GDPR/CCPA), bạn có toàn quyền yêu cầu xóa bỏ vĩnh viễn mọi dữ liệu, token và tài khoản bất kỳ lúc nào:
             </p>
             <div className="p-4 rounded-2xl bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-200/50 dark:border-indigo-800/50 space-y-2">
-              <p className="font-semibold text-slate-900 dark:text-white">Cách thức yêu cầu xóa dữ liệu:</p>
+              <p className="font-semibold text-slate-900 dark:text-white">Các kênh tiếp nhận yêu cầu xóa dữ liệu:</p>
               <ul className="list-disc list-inside space-y-1 text-slate-700 dark:text-slate-300">
-                <li><strong>Cách 1 (Trong ứng dụng):</strong> Vào mục <em>Cài đặt (Settings) &rarr; Tài khoản (Account) &rarr; Xóa tài khoản &amp; dữ liệu</em>.</li>
-                <li><strong>Cách 2 (Trang web):</strong> Truy cập trực tiếp trang <Link href="/data-deletion" className="text-indigo-600 dark:text-indigo-400 font-semibold underline hover:text-indigo-500">Yêu Cầu Xóa Dữ Liệu Người Dùng</Link> để gửi form trực tuyến.</li>
-                <li><strong>Cách 3 (Email):</strong> Gửi email đến <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline font-medium">vonghiaky.dev@gmail.com</a> với tiêu đề <em>[Yêu cầu xóa dữ liệu - Tên Ứng Dụng]</em>. Yêu cầu sẽ được xử lý trong vòng 30 ngày.</li>
+                <li>
+                  <strong>Trang xóa dữ liệu trực tuyến:</strong> Truy cập trực tiếp <Link href="/data-deletion" className="text-indigo-600 dark:text-indigo-400 font-semibold underline hover:text-indigo-500">Trang Hướng Dẫn &amp; Yêu Cầu Xóa Dữ Liệu (/data-deletion)</Link> để gửi yêu cầu xóa tài khoản tức thì.
+                </li>
+                <li>
+                  <strong>Gửi Email trực tiếp:</strong> Gửi email đến <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline font-medium">vonghiaky.dev@gmail.com</a> với tiêu đề <em>[Yêu cầu xóa dữ liệu - Tên Dịch Vụ/Ứng Dụng]</em>. Toàn bộ dữ liệu của bạn sẽ được xóa sạch khỏi cơ sở dữ liệu trong vòng 24 - 48 giờ làm việc.
+                </li>
               </ul>
             </div>
           </div>
@@ -145,30 +186,17 @@ export default function PrivacyPolicyPage() {
         {/* Section 5 */}
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
-            <Shield className="w-5 h-5 text-emerald-500" />
-            <h2>5. Quyền Riêng Tư Của Trẻ Em (Children&apos;s Privacy / COPPA)</h2>
-          </div>
-          <div className="text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed pl-1">
-            <p>
-              Các ứng dụng của chúng tôi không hướng mục tiêu trực tiếp và không chủ ý thu thập thông tin nhận dạng cá nhân từ trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu theo quy định tại quốc gia sở tại). Nếu phụ huynh hoặc người giám hộ phát hiện trẻ em đã cung cấp dữ liệu cá nhân cho chúng tôi, vui lòng liên hệ ngay để chúng tôi tiến hành xóa bỏ lập tức.
-            </p>
-          </div>
-        </div>
-
-        {/* Section 6 */}
-        <div className="space-y-3">
-          <div className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
             <Mail className="w-5 h-5 text-indigo-500" />
-            <h2>6. Thông Tin Liên Hệ Của Nhà Phát Triển (Developer Contact)</h2>
+            <h2>5. Thông Tin Liên Hệ Của Nhà Phát Triển (Developer Contact)</h2>
           </div>
           <div className="text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed pl-1">
-            <p>Nếu bạn có bất kỳ thắc mắc, phản hồi hoặc yêu cầu pháp lý nào liên quan đến Chính sách quyền riêng tư này, vui lòng liên hệ với nhà phát triển:</p>
+            <p>Nếu bạn có bất kỳ câu hỏi nào về Chính sách quyền riêng tư này hoặc cần hỗ trợ về mặt kỹ thuật, vui lòng liên hệ:</p>
             <div className="p-4 rounded-2xl bg-slate-100/70 dark:bg-slate-800/70 space-y-1 text-slate-800 dark:text-slate-200">
               <p><strong>Nhà phát triển:</strong> Võ Nghĩa Kỳ (Vo Nghia Ky)</p>
-              <p><strong>Email hỗ trợ:</strong> <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline">vonghiaky.dev@gmail.com</a></p>
+              <p><strong>Email chính thức:</strong> <a href="mailto:vonghiaky.dev@gmail.com" className="text-indigo-600 dark:text-indigo-400 underline font-semibold">vonghiaky.dev@gmail.com</a></p>
               <p><strong>Điện thoại:</strong> (+84) 91 347 6315</p>
-              <p><strong>Địa chỉ:</strong> Thành phố Hồ Chí Minh, Việt Nam</p>
               <p><strong>Website:</strong> <a href="https://vonghiaky.dev" target="_blank" rel="noreferrer" className="text-indigo-600 dark:text-indigo-400 underline">https://vonghiaky.dev</a></p>
+              <p><strong>Địa chỉ:</strong> Thành phố Hồ Chí Minh, Việt Nam</p>
             </div>
           </div>
         </div>
