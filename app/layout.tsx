@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  verification: {
+    other: {
+      "tiktok-developers-site-verification": "8sf51VVjNs7VgjY43JLQGohi0BZthDh8",
+    },
+  },
 };
 
 export default function RootLayout({
